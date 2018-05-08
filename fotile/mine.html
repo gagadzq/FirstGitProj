@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/csss.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+  			<div class="container">
+  				<div class="navbar-header">
+      			<a class="navbar-brand" href="#">Tuea生活家</a>
+    			</div>
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    				<ul class="nav navbar-nav">
+    					 <li><a href="index.html">首页 </a></li>
+    					 <li><a href="food.html">美食</a></li>
+    					 <li><a href="">活动</a></li>
+    					 <li><a href="#">关于</a></li>
+    				</ul>
+    				<ul class="nav navbar-nav navbar-right">
+    					<li class="active"><a href="">我的Tuea生活</a></li>
+    					<li><a href="#">退出</a></li>
+    				</ul>
+    			</div>
+  			</div>
+		</nav>
+		<div class="row">
+			<div class="col-md-2">
+				<div class="navs">
+					<ul class="nav nav-pills nav-stacked navbar-inverse">
+						<li><a href="mineFood.html">收藏的美食</a></li>
+						<li class="group"><a href="mineActivity.html">预约的活动</a></li>
+						<li><a href="#">美食发布</a></li>
+						<li class="group"><a href="#">活动发布</a></li>
+						<li class="active"><a href="#">设置</a></li>		
+					</ul>
+				</div>				
+			</div>
+			<div class="col-md-9">
+				<div class="panel">
+					<h1>我的Tuea生活</h1><br />
+					<div class="panel panel-primary ">
+						<div class="panel-heading">我的个人信息</div>
+						<div class="panel-body">
+							<div class="page-header">
+  								<h3>更改密码</h3>
+							</div>
+							<form class="form-horizontal">
+  								<div class="form-group">
+    								<label for="inputEmail3" class="col-sm-4 control-label">新密码</label>
+    								<div class="col-sm-4">
+      									<input type="password" class="form-control" id="inputPassword">
+    								</div>
+  								</div>
+  								<div class="form-group">
+    								<label for="inputPassword3" class="col-sm-4 control-label">确认密码</label>
+    								<div class="col-sm-4">
+      									<input type="password" class="form-control" id="inputPassword2">
+    								</div>
+  								</div>
+  								<div class="form-group">
+    								<label for="inputPassword3" class="col-sm-4 control-label">旧密码</label>
+    								<div class="col-sm-4">
+      									<input type="password" class="form-control" id="inputPasswordold">
+    								</div>
+  								</div>
+  								<div class="form-group">
+    								<div class="col-sm-offset-10 col-sm-2 text-center">
+      									<button type="submit" class="btn btn-primary">确认更改</button>
+    								</div>
+ 	 							</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script>
+		$(function(){
+			var height=$(window).height();
+			
+			$(".navs").css("min-height",height-50);
+		})
+	</script>
+</html>

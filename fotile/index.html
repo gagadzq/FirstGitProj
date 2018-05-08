@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  	<head>
+    		<meta charset="utf-8">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<title>Tuea生活家——首页</title>
+
+    		<!-- Bootstrap -->
+    		<link href="css/bootstrap.min.css" rel="stylesheet">
+				<link href="css/csss.css" rel="stylesheet">
+  	</head>
+  	<body>
+  		<div>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+  				<div class="container">
+  					<div class="navbar-header">
+      				<a class="navbar-brand" href="#">Tuea生活家</a>
+    				</div>
+    				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    					<ul class="nav navbar-nav">
+    						 <li class="active"><a href="">首页 </a></li>
+    					 	<li><a href="food.html">美食</a></li>
+    					 	<li><a href="activity.html">活动</a></li>
+    					 	<li><a href="#">关于</a></li>
+    					</ul>
+    					<ul class="nav navbar-nav navbar-right">
+    						<li><a href="" data-toggle="modal" data-target="#myModal">登录</a></li>
+    						<li><a href="#" data-toggle="modal" data-target="#myModal2">注册</a></li>
+    					</ul>
+    				</div>
+  				</div>
+			</nav>
+			</div>
+			<div data-spy="scroll" data-target="#navbar-example" data-offset="0">
+				<div class="row" id="zs">
+					<div id="myCarousel" class="carousel slide ">
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+						</ol>   
+						<div class="carousel-inner ">
+							<div class="item active banner">
+								<img src="images/lunbo01.jpg" alt="First slide">
+								<div class="carousel-caption">
+                            		<h1>水果吐司拼盘</h1>
+                                	<button class="btn btn-primary btn-lg">查看详情</button>
+                             	</div>
+							</div>
+							<div class="item banner">
+								<img src="images/lunbo02.jpg" alt="Second slide">
+								<div class="carousel-caption">
+                            		<h1>樱桃拼盘</h1>
+                                	<button class="btn btn-primary btn-lg">查看详情</button>
+                             	</div>
+							</div>
+							<div class="item banner">
+								<img src="images/lunbo03.jpg" alt="Third slide">
+								<div class="carousel-caption">
+                            		<h1>水果沙拉</h1>
+                                	<button class="btn btn-primary btn-lg">查看详情</button>
+                             	</div>
+							</div>
+							<div class="item banner">
+								<img src="images/lunbo04.jpg" alt="Fourth slide">
+								<div class="carousel-caption">
+                            		<h1>蔬菜沙拉</h1>
+                                	<button class="btn btn-primary btn-lg">查看详情</button>
+                             	</div>
+							</div>
+						</div><br/>
+						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    						<span class="sr-only">Previous</span>
+  						</a>
+  						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    						<span class="sr-only">Next</span>
+  						</a>
+					</div> 
+				</div>
+			</div>
+			<div class="model" id="js">
+				<div class="row">
+            		<div class="col-md-4">
+    					<div class="text-center">
+      						<img class="img-circle" src="images/food-icon.png" alt="...">
+      						<div class="caption">
+        						<h3>美食</h3>
+        						<p>体验极致烹饪</p>
+      						</div>
+    					</div>
+  					</div>
+                
+  					<div class="col-md-4">
+    					<div class="text-center">
+      						<img src="images/active-icon.png" alt="...">
+      						<div class="caption">
+        						<h3>活动</h3>
+        						<p>我们号召城中所有美食达人，辣妈主妇，烘焙大师，城市OL等民间高手，爱好生活、美食的伙伴们都相聚于此。</p>
+      						</div>
+    					</div>
+  					</div>
+                
+                	<div class="col-md-4">
+    					<div class="text-center">
+      						<img src="images/mys-icon.png" alt="...">
+      						<div class="caption">
+        						<h3>个人</h3>
+        						<p>更多个人信息查询管理</p>
+      						</div>
+    					</div>
+  					</div>
+				</div>
+				<hr>
+			</div>	
+			
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+      					<div class="modal-body">
+        					<ul id="myTab" class="nav nav-tabs">
+								<li class="active"><a href="#login" data-toggle="tab">登录</a></li>
+								<li><a href="#regist" data-toggle="tab">注册</a></li>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</ul>
+								
+							<div id="myTabContent" class="tab-content">
+								<div class="tab-pane fade in active" id="login">
+									<div class="row">
+										<div class="col-md-8 col-md-offset-2">
+											<br />
+											<form>
+												<div class="form-group">
+    												<label class="sr-only" for="Email">Email address</label>
+    												<input type="email" class="form-control" id="Email" placeholder="邮箱">
+  												</div>
+  												<div class="form-group">
+    												<label class="sr-only" for="Password">Password</label>
+    												<input type="password" class="form-control" id="Password" placeholder="密码">
+  												</div>
+  												<div class="checkbox">
+    												<label><input type="checkbox">记住我</label>
+    												<a class="pull-right" href="">忘记密码</a>
+  												</div>
+  												 <button type="submit" class="btn btn-default">登录</button>
+											</form>
+										</div>
+									</div>	
+								</div>
+								<div class="tab-pane fade" id="regist">
+									<div class="row">
+										<div class="col-md-8 col-md-offset-2">
+											<br />
+											<form>
+												<div class="form-group">
+    												<label class="sr-only" for="Email">Email address</label>
+    												<input type="email" class="form-control" id="reEmail" placeholder="邮箱">
+  												</div>
+  												<div class="form-group">
+    												<label class="sr-only" for="Password">Password</label>
+    												<input type="password" class="form-control" id="rePassword" placeholder="密码">
+  												</div>
+												<label class="text-danger pull-right" id="psdInfo"></label>
+  												<div class="form-group">
+    												<label class="sr-only" for="Password">Password</label>
+    												<input type="password" class="form-control" id="rePassword2" placeholder="确认密码">
+  												</div>
+												<label class="text-danger pull-right" id="psdAgnInfo"></label>
+												<br>
+  												<div class="checkbox">
+    												<label><input type="checkbox">我已仔细阅读并同意“服务协议”</label>
+  												</div>
+  												 <button type="submit" class="btn btn-default pull-right" id="registeBtn">注册</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+      					</div>
+    				</div><!-- /.modal-content -->
+  				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+			<footer>
+  				<div class="row">
+  					<div class="col-md-2 text-center">
+  						<span>&copy; 2018生活家</span>
+  					</div>
+  					<div class="col-md-1 pull-right"> 				            
+            			<a href="#">回到顶部</a>
+  					</div>
+  				</div>
+   			</footer>
+    	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+		<script src="js/registe.js"></script>
+  	</body>
+  	
+</html>

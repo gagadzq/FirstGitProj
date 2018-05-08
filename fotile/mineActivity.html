@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/csss.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+  			<div class="container">
+  				<div class="navbar-header">
+      			<a class="navbar-brand" href="#">Tuea生活家</a>
+    			</div>
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    				<ul class="nav navbar-nav">
+    					 <li><a href="index.html">首页 </a></li>
+    					 <li><a href="food.html">美食</a></li>
+    					 <li><a href="">活动</a></li>
+    					 <li><a href="#">关于</a></li>
+    				</ul>
+    				<ul class="nav navbar-nav navbar-right">
+    					<li class="active"><a href="">我的Tuea生活</a></li>
+    					<li><a href="#">退出</a></li>
+    				</ul>
+    			</div>
+  			</div>
+		</nav>
+		<div class="row">
+			<div class="col-md-2">
+				<div class="navs">
+					<ul class="nav nav-pills nav-stacked navbar-inverse">
+						<li><a href="mineFood.html">收藏的美食</a></li>
+						<li class="group active"><a href="mineActivity.html">预约的活动</a></li>
+						<li><a href="#">美食发布</a></li>
+						<li class="group"><a href="#">活动发布</a></li>
+						<li><a href="mine.html">设置</a></li>		
+					</ul>
+				</div>				
+			</div>
+			<div class="col-md-9">
+				<div class="panel">
+					<h1>我的Tuea生活</h1><br />
+					<div class="panel panel-primary ">
+						<div class="panel-heading">我预约的活动</div>
+						<div class="panel-body">
+							<table class="table table-striped">
+								<tbody>
+									<tr>
+										<td>新年家宴——云南菜</td>
+										<td class="text-right"><button class="btn btn-danger">取消</button></td>
+									</tr>
+									<tr>
+										<td>新年家宴——法式甜点</td>
+										<td class="text-right"><button class="btn btn-success">活动结束</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script>
+		$(function(){
+			var height=$(window).height();
+			
+			$(".navs").css("min-height",height-50);
+		})
+	</script>
+</html>

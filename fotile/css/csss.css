@@ -1,0 +1,32 @@
+body{
+	padding-top: 50px; 
+}
+.model{
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+footer{
+	padding-bottom: 20px;
+}
+
+.activeImg img{
+	margin-bottom: 15px;
+}
+.navs{
+	background-color: rgb(33,33,33);
+	
+}
+.navs ul li a{
+	color: #bbb
+}
+.navs ul li a:hover{
+	background:rgb(33,33,33);
+	color: white;
+}
+.navs ul {
+	padding-top: 30px;
+}
+.group{
+	padding-bottom: 8px;
+	border-bottom: 1px solid #444;
+}
